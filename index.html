@@ -25,7 +25,7 @@
         <header class="bg-gray-800 py-6">
             <div class="container mx-auto flex justify-between items-center px-4">
                 <h1 class="text-white text-2xl">Cognition Labs</h1>
-                <nav>
+                <nav class="hidden sm:block">
                     <ul class="flex space-x-4">
                         <li><a href="#" class="text-white">Home</a></li>
                         <li><a href="#services" class="text-white">Services</a></li>
@@ -37,7 +37,7 @@
             </div>
         </header>
 
-        <section class="bg-white py-16">
+        <section class="bg-white py-8">
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl font-bold mb-8">We Build Software That Works</h2>
                 <p class="text-gray-600">
@@ -47,7 +47,7 @@
             </div>
         </section>
 
-        <section class="bg-gray-100 py-16">
+        <section class="bg-gray-100 py-8">
             <div class="container mx-auto px-4">
                 <h2 id="services" class="text-3xl font-bold mb-8">Services</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -78,11 +78,11 @@
             </div>
         </section>
 
-        <section class="bg-white py-16">
+        <section class="bg-white py-8">
             <div class="container mx-auto px-4">
                 <h2 id="projects" class="text-3xl font-bold mb-8">Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-gray-200 rounded-lg shadow-lg p-6">
+                    <div class="rounded-lg shadow-lg p-6">
                         <h3 class="text-xl font-bold mb-4">
                             <a class="external underline text-blue-600 hover:text-blue-800"
                                 href="https://pairprogram.app" target="_blank">pairprogram.app</a>
@@ -92,7 +92,7 @@
                         <p class="text-gray-600">Minimalistic collaborative code editing in the cloud. Built for
                             professors at the University of Texas at Dallas.</p>
                     </div>
-                    <div class="bg-gray-200 rounded-lg shadow-lg p-6">
+                    <div class="rounded-lg shadow-lg p-6">
                         <h3 class="text-xl font-bold mb-4">
                             <a class="external underline text-blue-600 hover:text-blue-800"
                                 href="https://shreyjoshi.com/resources/glas/poster.pdf" target="_blank">Landslide
@@ -107,7 +107,7 @@
                         <p class="text-gray-600">2-year long research project into applied ML for satellite
                             data. 100s of GBs processed. Published at 2021 MIT Conference.</p>
                     </div>
-                    <div class="bg-gray-200 rounded-lg shadow-lg p-6">
+                    <div class="rounded-lg shadow-lg p-6">
                         <h3 class="text-xl font-bold mb-4">
                             <a class="external underline text-blue-600 hover:text-blue-800"
                                 href="https://theorwelleditor.com" target="_blank">The Orwell Editor</a>
@@ -123,7 +123,7 @@
             </div>
         </section>
 
-        <section class="bg-white py-16">
+        <section class="bg-white py-8">
             <div class="container mx-auto px-4">
                 <h2 id="team" class="text-3xl font-bold mb-8">Team</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -158,11 +158,13 @@
             </div>
         </section>
 
-        <section class="bg-white py-16">
+        <section class="bg-white py-8">
             <div class="container mx-auto px-4">
                 <h2 id="contact" class="text-3xl font-bold mb-8">Contact Us</h2>
                 <p class="text-black">
-                    Email us at one of the following or schedule a meeting below:
+                    Email us at one of the following or schedule a meeting using <a
+                        href="https://calendly.com/shrey-joshi/30min"
+                        class="underline text-blue-600 hover:text-blue-800">this link</a>:
                 </p>
                 <ul class="list-disc list-inside text-gray-600">
                     <li>
@@ -175,7 +177,7 @@
                     </li>
                 </ul>
                 <!-- Calendly inline widget begin -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/shrey-joshi/30min"
+                <div class="calendly-inline-widget hidden md:block" data-url="https://calendly.com/shrey-joshi/30min"
                     style="min-width:320px;height:700px;"></div>
                 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
                     async></script>
